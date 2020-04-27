@@ -1,0 +1,27 @@
+
+body {
+  background: #222;
+}
+
+h1 {
+  padding: 2em;
+  font-size: 1.2em;
+  text-align: center;
+
+  color: #212121;
+  background: #fff;
+}
+
+@media ( max-width : 1024px) {
+    body { background-color: cyan;
+    }
+    h1 {background-color:yellowgreen
+    }
+}
+
+@media ( max-width : 768px) {
+  body {background-color: green;
+  }
+  h1 {background-color: yellow
+  }
+}
