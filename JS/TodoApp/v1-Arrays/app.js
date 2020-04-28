@@ -27,3 +27,21 @@ todoList.splice(1, 1);
 console.log("List after splice", todoList);
 
 
+// CREATE A NEW ARRAY
+
+let country = [
+  "France",
+  "Switzerland",
+  "Italy",
+  "Morocco",
+  "Singapore"
+];
+
+
+console.log(country[0]);
+
+country.push("Spain");
+console.log(country);
+
+country.splice(1,2);
+console.log(country);

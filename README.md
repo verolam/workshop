@@ -1,9 +1,17 @@
 # MY WORKSHOP
-This is my depository from my working class06042020
-## CLI
-This will contain my CLI items
-##HTML-CSS
-This will contain my CLI items
+This is my depository from my working class
 
-## JS
 
+## JS  - Updated on 04/28/2020
+
+
+In the Folder v2-Functions, some examples of functions :
+
+### JS Functions
+  - Create a function who returns the area of a surface in m2. Return a string like "The area is your number here m2"
+  - Returns the Remainder from Two Numbers
+  Frames Per Second
+
+### JS Functions using Objects
+  - Extract City Facts
+  - Calculate the Profit

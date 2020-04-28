@@ -2,6 +2,7 @@
 //confirm("It's working!");
 
 /* TODO LIST - Global scope
+todoList is an array 
 ---------------------------------*/
 
 let todoList = [
@@ -12,12 +13,12 @@ let todoList = [
 ];
 
 
-/* DISPLAY TODO
+/* DISPLAY TODO 
 ---------------------------------*/
+// Function which display the todolist Array
+
 function displayTodos(){
 
-  // Local scope
-  
   console.log(todoList);
 
 }
@@ -25,6 +26,9 @@ function displayTodos(){
 
 /* ADD TODO
 ---------------------------------*/
+// Function which ADD an element in the Array todoList
+// then the previous function displayTodos() is called to show the result
+
 function addTodos(arg){
 
 todoList.push(arg);
@@ -37,6 +41,9 @@ addTodos("My New todo");
 
 /* Change a TODO
 ---------------------------------*/
+// Function which change and element of the array targetted by its index
+ 
+
 function changeTodo(index, text){
 
   todoList[index] = text;
@@ -44,12 +51,13 @@ function changeTodo(index, text){
    
   }
   
-  changeTodo(1, "Buy sugar");
-  changeTodo(2, "Go for a walk");
+  changeTodo(1, "Buy sugar");      // element "Buy Tobacco" ==> "Buy sugar"   
+  changeTodo(2, "Go for a walk");  // element "Do This" ==> "Go for a walk"
   
 
-  /* Delete a TODO
+/* Delete a TODO
 ---------------------------------*/
+// Function which delete one or several elements (numberToDelete) from a position(index1)
 function deleteTodo(index1, numberToDelete = 1){
 
   todoList.splice(index1, numberToDelete);
@@ -57,11 +65,185 @@ function deleteTodo(index1, numberToDelete = 1){
    
   }
   
-  deleteTodo(1,1);
+  deleteTodo(1,1); //  Delete element one element with index 1
 
 
-
-  /* OBJECTS
+//===========================================================================
+/* Function Remainder
 ---------------------------------*/
+function remainder(num1, num2){
+
+let modulo = num1 % num2;
+console.log("The remainder between " + num1 + " and " + num2 + " is " + modulo);
+return modulo ;
+
+
+}
+
+remainder(2560,3); // remainder =1
+remainder(2550,5); // remainder = 0
+
+
+
+//===========================================================================
+
+/* Function Frame per second
+---------------------------------*/
+function frames(minute, number) {
+
+let fps = minute * number * 60;
+console.log("For " + minute + " minutes " + " and number " + number + "the FPS IS "  + fps);
+return fps;
+}
+frames(1 , 1); //60
+frames(10,1); // 600
+frames(10, 25) // 15000   
+
+
+
+
+//===========================================================================
+
+
+/* Function Cities with facts using an object
+---------------------------------*/
+// The argument passed to the function is an Object
+
+function cityFacts(arg){
+  console.log(arg.name + " has a population of " + arg.population + " and is situated in " + 
+ arg.continent);
+}
+
+
+cityFacts({
+  name: "Paris",
+  population: "2,140,526",
+  continent: "Europe"
+}) // "Paris has a population of 2,140,526 and is situated in Europe"
+
+cityFacts({
+  name: "Tokyo",
+  population: "13,929,286",
+  continent: "Asia"
+}) // "Tokyo has a population of 13,929,286 and is situated in Asia"
+
+
+
+ //===========================================================================
+
+/* Function calculate surface
+---------------------------------*/
+function surface(type,dim1,dim2){
+   
+  let result = 0;
+  switch (type) {
+    case "square":
+    case "rectangle":
+      result = dim1 * dim2;
+      break;
+    case "triangle" :
+      result = dim1 * dim2 *0.5;
+      break;
+}
+    console.log("The area for a " + type + " is " + result + "m2");
+
+}
+
+surface("triangle",25,10);
+surface("rectangle",25,10);
+surface("square",25,10);
+
+
+
+ //===========================================================================
+
+/* Function calculate profit
+---------------------------------*/
+// The argument (arg)  is an object !!!!
+
+function profit(arg){
+
+let result = 0;
+result =  ( arg.sellPrice * arg.inventory) - (arg.costPrice * arg.inventory) ;
+result = Math.round(result);
+console.log(result);
+}
+
+
+profit({
+  costPrice: 32.67,
+  sellPrice: 45.00,
+  inventory: 1200
+}) // ➞ 14796
+
+profit({
+  costPrice: 225.89,
+  sellPrice: 550.00,
+  inventory: 100
+}) // ➞ 32411
+
+profit({
+  costPrice: 2.77,
+  sellPrice: 7.95,
+  inventory: 8500
+}) // ➞ 44030
+
+
+
+//===========================================================================
+
+/* Function Cities with facts 
+---------------------------------*/
+let cities = [
+
+  {
+    name : "Paris",
+    population :  "2.148.000",
+    continent :  "Europe"
+  },
+  
+  { name : "Milan",
+    population : "1.352.000",
+    continent: "Europe"
+  },
+  
+  { name : "Tokyo", 
+    population :"37.280.000",
+    continent: "Asia"
+  },
+  
+  { name : "Casablanca", 
+    population :"3.360.000", 
+    continent: "Africa"
+  },
+  
+  { name : "Washington",
+    population : "702450",
+    continent: "America"
+  }
+  ];
+  
+  function cityFacts2(city){
+    let i;
+    let trouve = 0; // If city found trouve = 1
+    for (i=0; i<5; i++){
+  
+      if (city == cities[i].name) {
+        console.log(cities[i].name + " has a population of " + cities[i].population + " and is situated in " + cities[i].continent);
+        trouve = 1;
+      }
+          
+     }
+     if (trouve == 0) {    
+      console.log("city not registered");
+    }
+    
+  }
+  
+  cityFacts2("Paris");
+  cityFacts2("Berlin");
+  cityFacts2("Milan");
+  cityFacts2("Tokyo");
+  
   
   
