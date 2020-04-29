@@ -15,3 +15,9 @@ In the Folder v2-Functions, some examples of functions :
 ### JS Functions using Objects
   - Extract City Facts
   - Calculate the Profit
+
+## JS  - Conditions -  Updated on 04/29/2020
+
+  - The anatomy of a condition
+  - Different type of operators
+  - Different examples

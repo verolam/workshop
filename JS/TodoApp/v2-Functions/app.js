@@ -131,7 +131,7 @@ cityFacts({
 
  //===========================================================================
 
-/* Function calculate surface
+/* Function to calculate surface
 ---------------------------------*/
 function surface(type,dim1,dim2){
    

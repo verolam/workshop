@@ -252,7 +252,7 @@ let persons = {
     country: "Holland"
   },
   nadia: {
-    name: "Nadia Comaneci,
+    name: "Nadia Comaneci",
     gender: "female",
     age: 45,
     country: "Romania"
