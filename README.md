@@ -21,3 +21,10 @@ In the Folder v2-Functions, some examples of functions :
   - The anatomy of a condition
   - Different type of operators
   - Different examples
+
+
+## JS Conditions - Updated on 04/30/2020
+
+   - Is the Number Less than or Equal to Zero?
+   - Is the Number Even or Odd?
+   - Is the Word Singular or Plural?

@@ -244,6 +244,96 @@ let cities = [
   cityFacts2("Berlin");
   cityFacts2("Milan");
   cityFacts2("Tokyo");
+  show(cities);
   
   
+ //===========================================================================
+
+/* Function testing String isEmpty
+---------------------------------*/
+function isEmpty(str){
+output = " ";
+
+if (str === "" )
+output = "true";
+else output = "false";
+
+console.log(output);
+}
+
+isEmpty("") // ==> true
+show(output);
+isEmpty(" ") // ➞ false
+show(output);
+isEmpty("a") // ➞ false
+show(output);
+
+
+ //===========================================================================
+
+/* Function testing if an integer is divisible by 5 
+--------------------------------------------------*/
+// A number is divisible by 5 if remainder = 0 or 5
+
+function divisibleByFive(int) {
+  let modulo2 = 0;
+  let output = "";
+
+  modulo2 = (int % 5);
+  show(modulo2);
+  if (modulo2 == 0 || modulo2 == 5 || modulo2 == -5) {
+    output = "true";}
+  else { output = "false"; }
   
+  console.log("divisibleByFive", output);  
+}
+  
+
+divisibleByFive(5) // ➞ true
+divisibleByFive(-55) // ➞ true
+divisibleByFive(37) // ➞ false
+
+
+/* Is the Number Less than or Equal to Zero?
+--------------------------------------------------*/
+
+//  Create a function that takes a number as its only argument and
+//  returns true if it's less than or equal to zero, otherwise return false.
+
+function lessThanOrEqualToZero(num) {
+if (num<= 0) {
+  console.log("lessThanOrEqualToZero", "true");
+  }
+else {
+  console.log("lessThanOrEqualToZero", "false");
+}
+}
+
+lessThanOrEqualToZero(5) // ➞ false
+lessThanOrEqualToZero(0) // true
+lessThanOrEqualToZero(-2) //  ➞ true
+
+
+
+/*Is the Number Even or Odd?
+--------------------------------------------------*/
+// Create a function that takes a number as an argument
+// and returns "even" for even numbers and "odd" for odd numbers.
+
+function isEvenOrOdd(num2) {
+  remainder = 0;
+  remainder = num2 % 2;
+  if (remainder == 0 ){
+    console.log("isEvenOrOdd", "Even" );
+  }  
+  else {
+    console.log("isEvenOrOdd", "Odd" );
+  }
+}
+
+
+isEvenOrOdd(3)    // ➞ "odd"
+isEvenOrOdd(146)  // ➞ "even"
+isEvenOrOdd(19)   // ➞ "odd"
+
+
