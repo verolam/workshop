@@ -320,20 +320,72 @@ lessThanOrEqualToZero(-2) //  ➞ true
 // Create a function that takes a number as an argument
 // and returns "even" for even numbers and "odd" for odd numbers.
 
-function isEvenOrOdd(num2) {
+function isEvenOrOdd(num2)
+{
   remainder = 0;
   remainder = num2 % 2;
+  if (num2 !== parseInt(num2))
+    {console.log("data is not an integer");}
+  else { 
   if (remainder == 0 ){
-    console.log("isEvenOrOdd", "Even" );
-  }  
+      console.log("isEvenOrOdd", "even" );
+    }  
   else {
-    console.log("isEvenOrOdd", "Odd" );
+      console.log("isEvenOrOdd", "odd" );
+    }
+
   }
 }
 
-
-isEvenOrOdd(3)    // ➞ "odd"
+isEvenOrOdd(3.2)    // ➞ "not an integer"
+isEvenOrOdd(141)  // ➞ "even"
 isEvenOrOdd(146)  // ➞ "even"
 isEvenOrOdd(19)   // ➞ "odd"
 
+
+/* Is the Word Singular or Plural?
+// --------------------------------------------------*/
+// Create a function that takes in a word and determines whether or not it is plural.
+// A plural word is one that ends in "s".
+
+function isPlural(mot){
+ let lastLet =  mot.slice(-1);
+console.log(lastLet);
+if (lastLet == "s"){
+  console.log("plural", "true");
+}
+else {
+  console.log("plural", "false");
+}
+}
+
+isPlural("changes") //➞ true
+isPlural("change") //➞ false
+isPlural("dudes") // ➞ true
+isPlural("magic") // ➞ false
+
+
+/* Is the Word Singular or Plural?
+/*-------------------------------------------*/
+// second method with using : length and substring
+
+function isPlural2(word2) {
+let wordLength =0;
+wordLength = word2.length;
+
+console.log(wordLength, word2);
+let lastLetter = word2.substring(wordLength, wordLength - 1);
+
+if (lastLetter == "s"){
+  console.log("lastLetter is s", "true");
+}
+else {
+  console.log("lastLetter is s", "false");
+}
+}
+
+isPlural2("changes") //➞ true
+isPlural2("change") //➞ false
+isPlural2("dudes") // ➞ true
+isPlural2("magic") // ➞ false
 
