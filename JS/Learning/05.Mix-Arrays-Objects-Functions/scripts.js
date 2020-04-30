@@ -3,11 +3,7 @@
 //Only arrays variante
 let __myList = [
 
-  [
-    "Learn CSS", 
-    "2020.04.31", 
-    true
-  ],
+  ["Learn CSS", "2020.04.31",true],
   ["Learn JS", "2020.04.31", true],
   ["Learn Python", "2020.04.31", true]
 
@@ -37,24 +33,24 @@ let myList = [
 ];
 
 
-//show(myList[0]["deadline"]); //Square braquets notation
+show(myList[0]["deadline"]); //Square braquets notation
 //show(myList[0].deadline);
 
 //CHANGE A KEY VALUE
-// myList[0].completed = true;
-// myList[0].deadline = "2020.05.12";
+ myList[0].completed = true;
+ myList[0].deadline = "2020.05.12";
 //show(myList[1]);
 
 //DELETE AN ARRAY ITEM
-//myList.splice(1, 0);
+myList.splice(1, 0);
 //show(myList);
 
 //ADD AN ITEM
-// myList.push({
-//   text:       "Learn Zwilly", 
-//   deadline:   "2021.04.30", 
-//   completed:  false
-// });
+ myList.push({
+   text:       "Learn Zwilly", 
+   deadline:   "2021.04.30", 
+   completed:  false
+ });
 //show(myList);
 
 //REFACTORING

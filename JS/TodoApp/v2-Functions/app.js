@@ -328,8 +328,7 @@ function isEvenOrOdd(num2)
     {console.log("data is not an integer");}
   else { 
   if (remainder == 0 ){
-      console.log("isEvenOrOdd", "even" );
-    }  
+      console.log("isEvenOrOdd", "even" );}  
   else {
       console.log("isEvenOrOdd", "odd" );
     }
@@ -369,12 +368,12 @@ isPlural("magic") // ➞ false
 /*-------------------------------------------*/
 // second method with using : length and substring
 
-function isPlural2(word2) {
+function isPlural2(word) {
 let wordLength =0;
-wordLength = word2.length;
+wordLength = word.length;
 
-console.log(wordLength, word2);
-let lastLetter = word2.substring(wordLength, wordLength - 1);
+console.log(wordLength, word);
+let lastLetter = word.substring(wordLength, wordLength - 1);
 
 if (lastLetter == "s"){
   console.log("lastLetter is s", "true");
