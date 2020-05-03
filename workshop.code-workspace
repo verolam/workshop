@@ -2,12 +2,9 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "C:\\Users\\veronique\\POWERCODERS\\dev-blog"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "workshop"
+		"liveServer.settings.multiRootWorkspaceName": "dev-blog"
 	}
 }
