@@ -115,7 +115,7 @@ minMax([2334454, 5]) // ➞ [5, 2334454]
 minMax([1]) // ➞ [1, 1]
 
 
-/* Filter out Strings from an Array
+/* LOOP :  Filter out Strings from an Array
 -------------------------------------- */
 /* Create a function that takes an array of non-negative 
 integers and strings and return a new array without the strings. */
