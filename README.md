@@ -2,11 +2,18 @@
 This is my depository from my working class
 
 
+## HTML & THE DOM
+  - Target an HTML element
+  - Get the content of a DOM element with innerHTML 
+  - Put something inside an HTML element with the innerHTML method
+  - Create HTML elements
+  - Add/Change HTML attributes   
+
 ## JS Conditions - Updated on 05/04/2020
   - The else if statement
   - Embeded conditions
   - Alternative: the switch statement
-  -  The "bang" operator ! (or logical NOT)
+  - The "bang" operator ! (or logical NOT)
   - The ternary operator
 
   - The switch

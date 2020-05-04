@@ -148,7 +148,7 @@ else {
 show(output);
 
 
-        //CONDITION  then IF TRUE  IF FALSE
+        //CONDITION   IF TRUE  IF FALSE
  output = (num5 >= 25) ? "TRUE" : "FALSE";
 show(output);
 

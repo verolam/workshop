@@ -32,7 +32,7 @@ for ( let i = 0; i <= names.length; i++ ) {
 
 //1 
 for (let i= 20; i<=30; i++ ){
-show(i);
+//show(i);
 }
 
 
@@ -53,16 +53,11 @@ let todos = [
   }
 ];
 
-// First way 
-
-for (let i=0; i<todos.length; i++) {
-  
-show(todos[i].text + " : " +  todos[i].completed );
-
-}
+ 
 
 // Second way 
-for (let i=0; i<todos.length; i++) {
+
+for (let i=0; i < todos.length; i++) {
 let text = todos[i].text;
 let completed = todos[i].completed ;
 let displayStatus = (completed) ?  " Done" : " Todo ...";
@@ -78,7 +73,7 @@ show(output);
 // We call the function argument "Closure" or "anonymous function"
 
 todos.forEach(function(item){
-show(item.text);
+//show(item.text);
 
 });
 
@@ -86,7 +81,7 @@ show(item.text);
 // other way to do the same 
 
 function bob(item){
-  show(item.text);
+ // show(item.text);
 }
 
 todos.forEach(bob);
