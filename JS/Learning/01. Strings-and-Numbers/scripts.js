@@ -8,8 +8,6 @@ comment
 */
 
 
-
-
 /* VARIABLES
 ------------------------------------*/
 /* NAMING RULES
@@ -48,8 +46,6 @@ let object = {
   name: "John",
   age: 23
 };
-
-
 
 
 /* STRINGS
