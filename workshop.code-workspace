@@ -1,10 +1,13 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "C:\\Users\\veronique\\POWERCODERS\\challenges"
+		},
+		{
+			"path": "JS"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "workshop"
+		"liveServer.settings.multiRootWorkspaceName": "challenges"
 	}
 }
