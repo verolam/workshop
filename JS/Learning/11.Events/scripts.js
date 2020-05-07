@@ -47,7 +47,7 @@ $('#btn1').addEventListener("click", function() {
 }
 );
 
-// //hover
+// hover
 // $('#btn1').addEventListener('mouseenter', function() {
   
 //   count++;

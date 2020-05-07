@@ -5,9 +5,12 @@
 		},
 		{
 			"path": "JS"
+		},
+		{
+			"path": "C:\\Users\\veronique\\POWERCODERS\\dev-blog"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "challenges"
+		"liveServer.settings.multiRootWorkspaceName": "dev-blog"
 	}
 }

@@ -17,7 +17,6 @@ function make(selector) {
 }
 
 
-
 // Target element → classic approach
 // const main = document.querySelector('main'); console.log(main);
 
@@ -27,15 +26,15 @@ const main = $('main'); console.log(main);
 
 
 // →→→ Manage attributes
-$('h1').setAttribute('id','main-title');
+$('h1').setAttribute('id','main-title'); // put an 'id' at the tag 'h1'
 
-// $('main p:first-child'); // target first p 
 
-$('p').setAttribute('class', 'row');
+$('p').setAttribute('class', 'row'); // put the class 'row' at the tag 'p'
+
 
 //$('#p4').removeAttribute('class'); // remove attribute class
 
-$('html').setAttribute('lang', 'fr');
+// $('html').setAttribute('lang', 'fr');
 
 
 // →→→ MANAGE CLASS ATTRIBUTE
@@ -68,6 +67,7 @@ main.insertBefore(p1, $('#p2'));
 // Remove an elt
 // $('main').remove();
 
+
 // create a new element div
 const d1 = make('div');
 const d2 = make('div');
@@ -82,12 +82,6 @@ d1.prepend(d2);
 //$('body').append(d1);
 
 // $('body').insertBefore(d1, $('script'));
-
-
-
-
-
-
 
 
 
@@ -115,7 +109,7 @@ p1.innerHTML = '<span class="success" >Info:> </span>A complex content ';
 // This will touch all of them
 // console.log( $$('p') ); 
 // $$('p').forEach(function(item) {
-// item.style.color = '#ccc';   // change the color of the item 
+// item.style.color = '#ccc';   
 // item.style.backgroundColor = '#00000';
 // }); 
 
@@ -123,7 +117,8 @@ p1.innerHTML = '<span class="success" >Info:> </span>A complex content ';
 // →→→ DO STYLES
 
 $('#p2').style.color = '#f00'; 
-$('#p3').style.backgroundColor ="#ccc";
+$('#p3').style.backgroundColor ="#ccc"; // change the color of the item 
+
 // $('#p4').style.cssText = 'background-color = '#fc0'; color = 'fff';
 
 
