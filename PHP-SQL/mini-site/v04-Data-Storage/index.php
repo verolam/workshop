@@ -26,9 +26,8 @@ $site_data = json_decode($site_data_json, true); // show($site_data);
 //Only the pages array :
 $pages = $site_data['pages'];
 
-show( $pages['work']['title'] );
+//show( $pages['work']['title'] );
 ?>
-
 <!DOCTYPE html>
 <html>
 
@@ -37,9 +36,9 @@ show( $pages['work']['title'] );
   <title><?php echo $pages[$page]['title']; ?></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="<?php echo $site_data['description']; ?> ">
-  <meta name="keywords" content="php,dynamic site,cool,raoul">
-  <meta name="author" content="Sorin Paun"> 
+  <meta name="description" content="<?php echo $site_data['description']; ?>">
+  <meta name="keywords" content="<?php echo $site_data['keywords']; ?>">
+  <meta name="author" content="<?php echo $site_data['author']; ?>">
 
   <link rel="icon" href="img/favicon.png">
 
@@ -72,15 +71,12 @@ show( $pages['work']['title'] );
   <!-- CONTENT -->
   <main class="content">
 
-<h1 class="main-title "><?php echo $pages[$page]['title']; ?></h1>
-
+    <!-- Main Title -->
+    <h1 class="main-title"><?php echo $pages[$page]['title']; ?></h1>
 
     <?php
-
-     // echo '<h1>'.$pages[$page]['title'].'</h1>';
-
-
-
+    // You could echo the title here like this, insted of creating the html tag above :
+    // echo '<h1 class="main-title">'.$pages[$page]['title'].'</h1>';
 
     // Grab an external content methods :
     // Include function 
