@@ -1,0 +1,25 @@
+{
+
+  "global_title"  : "The Heavy metal Company",
+  "description"   : "How to use PHP to make dynamic ",
+  "keywords"      : "php,powercoders,Véronique,etc",
+  "author"        : "Véronique",
+
+
+  "pages"         : {
+   
+    "index": {
+      "title": "Where hardest stuff is possible",
+      "menu": "HOME"
+    },
+    "work": {
+      "title": "A selection of our latest projects",
+      "menu": "WORK"
+    },
+    "contact": {
+      "title": "Say Hello",
+      "menu": "CONTACT"
+    }
+
+  }
+}

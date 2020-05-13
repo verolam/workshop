@@ -73,7 +73,7 @@ show(output);
 // We call the function argument "Closure" or "anonymous function"
 
 todos.forEach(function(item){
-//show(item.text);
+show(item.text);
 
 });
 

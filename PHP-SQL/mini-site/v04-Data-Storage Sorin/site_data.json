@@ -1,0 +1,25 @@
+{
+
+  "global_title"  : "The Heavy metal Company",
+  "description"   : "How to use PHP to create a dynamic website",
+  "keywords"      : "php,powercoders,nadeem,etc",
+  "author"        : "Sorin Paun",
+
+  "pages"         : {
+
+    "index": {
+      "title": "Where hardest stuff is possible",
+      "menu": "HOME"
+    },
+    "work": {
+      "title": "A selection of our latest projects",
+      "menu": "WORK"
+    },
+    "contact": {
+      "title": "Say Hello",
+      "menu": "CONTACT"
+    }
+
+  }
+
+}
