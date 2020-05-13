@@ -1,7 +1,7 @@
 # MY WORKSHOP
 
 ## This is my repository WORKSHOP 
- All my working classes : CLI, HTML/CSS, JS, PHP-SQL, Python 
+ All my working classes : Git, CLI, HTML/CSS, JS, PHP-SQL, Python 
 
 ## PHP-SQL - Updated on 05/13/2020
   - Convert a static website to a "dynamic" website.
@@ -64,4 +64,5 @@ In the Folder v2-Functions, some examples of functions :
   - Calculate the Profit
 
 
-Thanks to Sorin Paun.
+
+#### Thanks to Sorin Paun.
