@@ -13,7 +13,8 @@ function show($arr) {
 }
 
 // Get page from URI
-$page = isset($_GET['page']) ? $_GET['page'] : 'index'; // echo $page;
+$page = isset($_GET['page']) ? $_GET['page'] : 'index'; 
+//echo $page;
 
 //GRAB THE JSON CONTENT
 $site_data_json = file_get_contents("site_data.json");
@@ -95,10 +96,7 @@ foreach($pages as $key => $item) {
 
     <?php
 
-     // echo '<h1>'.$pages[$page]['title'].'</h1>';
-
-
-
+   
 
     // Grab an external content methods :
     // Include function 

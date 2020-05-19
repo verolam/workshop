@@ -10,11 +10,13 @@
    
     "index": {
       "title": "Where hardest stuff is possible",
-      "menu": "HOME"
+      "menu": "HOME",
+     
     },
     "work": {
       "title": "A selection of our latest projects",
-      "menu": "WORK"
+      "menu": "WORK",
+     
     },
     "contact": {
       "title": "Say Hello",

@@ -25,13 +25,13 @@
   - Create HTML elements
   - Add/Change HTML attributes   
 
+
 ## JS Conditions - Updated on 05/04/2020
   - The else if statement
   - Embeded conditions
   - Alternative: the switch statement
   - The "bang" operator ! (or logical NOT)
   - The ternary operator
-
   - The switch
 
 
@@ -54,7 +54,7 @@
 
 
 ## JS -  Functions - Updated on 04/28/2020
-In the Folder v2-Functions, some examples of functions :
+  In the Folder v2-Functions, some examples of functions :
   - Create a function who returns the area of a surface in m2. Return a string like "The area is your number here m2"
   - Returns the Remainder from Two Numbers
   Frames Per Second
@@ -62,6 +62,18 @@ In the Folder v2-Functions, some examples of functions :
 ## JS Functions using Objects
   - Extract City Facts
   - Calculate the Profit
+
+
+## CLI - Day 04/08/2020
+  - HEADINGS 
+  - UNORDERED LIST
+  - CHECKBOXES  - [ ] Choose a template
+                - [ ] Create in Dev-blog    
+  - LINKS
+[This is a link to  CLI](https://github.com/powercoders-lausanne/support/tree/master/CLI)
+
+  - Image : To insert an image :
+![ This is an image](assets/img/barcelone.jpg)
 
 
 
