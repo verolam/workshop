@@ -72,3 +72,37 @@ divisibleByFive(5)
 divisibleByFive(-55)
 divisibleByFive(37)
 
+
+# Loop testing a number n positive or negative
+#--------------------------------------------------
+# n = 3
+# print("Je vais vous demander", n, "nombres") 
+# for i in range(n):
+#     x = int(input("Donnez un nombre : "))
+#     if x > 0:
+#         print(x, "est positif")
+#     else:
+#         print(x, "est négatif ou nul")
+# print("Fin")
+
+
+#  Strictly Increasing or Decreasing
+#----------------------------------------
+
+#Create a function that takes an array and determines whether it's strictly 
+# increasing, strictly decreasing, or neither.
+def check(arg1, arg2, arg3):
+    
+    if ( (arg1 < arg2) & (arg2< arg3) ):
+        output = "increasing"
+    elif ( arg1 > arg2 ) & (arg2 > arg3):
+        output = "decreasing"
+    else: output = "neither"
+   
+  
+    print(str(arg1) + str(arg2) + str(arg3) + " is " +  output)
+ 
+ 
+check(arg1=1, arg2=2, arg3=3) 
+check(arg1=2, arg2=2, arg3=3)
+check(arg1=3, arg2=2, arg3=0)

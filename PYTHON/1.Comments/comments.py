@@ -3,9 +3,9 @@
 # # print ("Hello World !")
 
 # num = 3
+str =  "Hello"
 
-# str =  "Hello"
-
+print(str)
 
 # # MULTI LINE COMMENTS
 # #--------------------------------------
