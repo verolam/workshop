@@ -106,3 +106,29 @@ def check(arg1, arg2, arg3):
 check(arg1=1, arg2=2, arg3=3) 
 check(arg1=2, arg2=2, arg3=3)
 check(arg1=3, arg2=2, arg3=0)
+
+
+
+# Create a function that takes an array of non-negative 
+# integers and strings and return a new array without the strings. 
+
+def filterArray(list2):
+
+# new array with only integer 
+    list3 = [] 
+  
+  for i in range(list2):
+     if type(list2[i]) = "int":
+        
+      list3.push(list2[i]); // add integer in the list
+     
+    } 
+    
+    list2 = list3; // new list2 with only integer
+    console.log(list2);
+    
+  }
+  
+  filterArray([1, 2, "a", "b"])   // ➞ [1, 2]
+  filterArray([1, "a", "b", 0, 15]) // ➞ [1, 0, 15]
+  filterArray([1, 2, "aasf", "1", "123", 123]) // ➞ [1, 2, 123]
