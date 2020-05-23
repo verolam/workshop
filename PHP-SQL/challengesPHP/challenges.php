@@ -1,13 +1,16 @@
 <?php
 
 /*
-In PHP concatenation is with "."
+Variables start with symbol => '$'
+Concatenation is with "."
 The legnth is with function count()
 Definition of properties in array is with "=>"
 At the end of the instruction put ";"
+Min and max ==>   min($list); $maxList = max($list
 
 */
 
+//=============================================
 
 /* FUNCTION show() to print 1 result by line
 -----------------------------------*/
@@ -18,6 +21,8 @@ function show($arr) {
   echo '</pre>';
 
 }
+
+//=============================================
 
 
 /* Function calculate profit
@@ -44,8 +49,8 @@ $table = [
 
 ];
 
-//count($table) to get the length (number of elements)
 
+//count($table) to get the length (number of elements)
 
 function profit(){
    global $table;
@@ -59,6 +64,8 @@ function profit(){
 profit();
 
 
+//=============================================
+
 
 /* Function Remainder
 ---------------------------------*/
@@ -67,7 +74,7 @@ profit();
 function remainder($num1, $num2){
 
   $modulo = $num1 % $num2;
-  show("The remainder between " .$num1 ." and " . $num2 ." is: " .$modulo);
+  show("The remainder between " .$num1 ." and " . $num2 ." is=> " .$modulo);
   return $modulo ;
     
   }
@@ -75,6 +82,8 @@ function remainder($num1, $num2){
   remainder(2560,3); // remainder =1
   remainder(2550,5); // remainder = 0
   
+
+//=============================================
 
 
   /* Function Cities with facts 
@@ -101,7 +110,9 @@ function remainder($num1, $num2){
     
   cityFacts();
   
-  
+ 
+//============================================= 
+
 
 /* Function testing if an integer is divisible by 5 
 --------------------------------------------------*/
@@ -126,5 +137,89 @@ divisibleByFive(5); // ➞ true
 divisibleByFive(-55); // ➞ true
 divisibleByFive(37); // ➞ false
 
-
   
+//=============================================
+
+
+/* Loops  =>  counting persons by Gender
+---------------------------------------*/
+// Create an array containing 6 persons, girls and boys. 
+// Each person should have 2 keys, name and gender.
+
+//Loop into the array and check how many girls and boys do you have. 
+//The output should // be something like => "My list contains 2 girls and 4 boys"
+
+$person = [
+  [
+  
+    'name' =>  "Penelope",
+    'gender' => "female"
+],
+
+  [
+    'name' =>  "Teresa",
+    'gender' => "female"
+  ],
+
+  [
+    'name' =>  "Rocky",
+    'gender' => "male"
+  ],
+
+  [
+    'name' =>  "Mireille",
+    'gender' => "female"
+  ],
+
+  [
+    'name' =>  "Mehdy",
+    'gender' => "male"
+  ]
+
+];
+
+
+function NumGender (){
+  global $person;
+  $numM = 0; // number of Boys
+  $numF = 0; // number of girls
+  $output = "";
+  $length = count($person);
+
+  for ($i=0; $i < $length; $i++){
+ 
+    if ($person[$i]['gender'] == "male" ){
+      $numM +=  1;
+  }
+    else if ($person[$i]['gender'] == "female" ){
+      $numF += 1;
+  }
+}
+
+  show("My list contains " . $numF . " girls and " . $numM . " boys");
+  
+};
+
+//call of the function
+NumGender();
+
+
+//=============================================
+
+ /* Find the Smallest and Biggest Numbers
+ ---------------------------------------- */
+/*  Create a function that takes an array of numbers
+ and return both the minimum and maximum numbers, in that order.*/
+
+ function minMax($list) {
+  $minList = min($list); // add "..." if you pass an array
+  $maxList = max($list);
+  show("The Min of the list is " .  $minList . " and the max is " . $maxList);
+ }
+
+minMax([1, 2, 3, 4, 5]); // ➞ [1, 5]
+minMax([2334454, 5]); // ➞ [5, 2334454]
+minMax([1]); // ➞ [1, 1]
+
+
+//=============================================
