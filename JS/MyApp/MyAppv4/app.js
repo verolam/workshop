@@ -1,9 +1,7 @@
 // If you re inside a function you can look out and see data (variables) but 
 // the opposite is not true : You can't from outside a function get a variable in function 
 
-
-// Toggle All : If everything is true, make evrything false
-// Otherwise Make evrything false
+// HTML AND DOM : Ther eshould be a button for displayItems and ToggleAll
 
 // Object
 //------------------
@@ -59,6 +57,7 @@ let todoItems = {
   toggleAll : function() {
     let totalItems = this.items.length;
     let totalCompleted = 0;
+    //Get total of completed
     for (let i=0; i< totalItems; i++) {
       if ( this.items[i].completed === true) {
         totalCompleted++;
@@ -80,24 +79,20 @@ let todoItems = {
    
 }
 
- // It should have a DisplayItems Method
- //todoItems.displayItems();
+// 1-  We want to get access to the Display Todos button
+// 2 - We want to run the DisplayItem Method when someone 
+//     click on the button display
 
- // It should have a addItems Method
- todoItems.addItem('Put a slice of bread');
- todoItems.addItem('Put some onions');
+let displayItemsButton = document.getElementById('displayItemsButton');
 
- // it should have a method to change .completed true<=> false
- todoItems.toggleCompleted(0);
- //todoItems.toggleCompleted(1);
+todoItems.addItem('Bread');
+todoItems.addItem('Tomatoe');
 
- // Toggle All : If everything is completed = true, make everything completed = false
- //todoItems.toggleAll();
- todoItems.toggleAll();
- 
- // It should have a changeItems Method
- //todoItems.changeItem(1,'Put some tomatoes');
+displayItemsButton.addEventListener('click', function() {
+  todoItems.displayItems();
+});
 
-
- // it should have a deleteItems Method
- //todoItems.deleteItem(2);
+let toggleAllButton = document.getElementById('toggleAllButton');
+toggleAllButton.addEventListener('click', function () {
+  todoItems.toggleAll();
+})
