@@ -3,6 +3,7 @@
 
 
 // Toggle All : If everything is true, make evrything false
+// Otherwise Make evrything false
 
 // Object
 //------------------
@@ -17,8 +18,7 @@ let todoItems = {
     } else {
       console.log('My items:');
       for (let i=0; i<this.items.length; i++){
-        console.log (this.items[i].todoText);
-
+       
         //check if .completed is true or false ==> print : (X) or ( )
         if (this.items[i].completed === true ) {
           console.log ('(X)',this.items[i].todoText );
@@ -52,9 +52,10 @@ let todoItems = {
   toggleCompleted : function(position) {
     let item = this.items[position]; // Target the item's position to change completed
     item.completed = !item.completed; // toggle completed change status false<=>true
+    this.displayItems();
   },
 
-  // Toggle All : If everything is completed = true, make everything completed = false
+  // Case 1 : Toggle All : If everything is completed = true, make everything completed = false
   toggleAll : function() {
     let totalItems = this.items.length;
     let totalCompleted = 0;
@@ -66,6 +67,12 @@ let todoItems = {
     if (totalCompleted === totalItems ) {
       for (let i=0; i < totalItems; i++) {
         this.items[i].completed = false;
+      } 
+    } 
+    // Case 2 : otherwise make everything false  
+    else {
+      for (let i=0; i < totalItems; i++) {
+        this.items[i].completed = true;
       }
     }
     this.displayItems();
@@ -74,7 +81,7 @@ let todoItems = {
 }
 
  // It should have a DisplayItems Method
- todoItems.displayItems();
+ //todoItems.displayItems();
 
  // It should have a addItems Method
  todoItems.addItem('Put a slice of bread');
@@ -82,15 +89,15 @@ let todoItems = {
 
  // it should have a method to change .completed true<=> false
  todoItems.toggleCompleted(0);
- todoItems.toggleCompleted(1);
+ //todoItems.toggleCompleted(1);
 
  // Toggle All : If everything is completed = true, make everything completed = false
+ //todoItems.toggleAll();
  todoItems.toggleAll();
-
+ 
  // It should have a changeItems Method
- todoItems.changeItem(1,'Put some tomatoes');
+ //todoItems.changeItem(1,'Put some tomatoes');
 
 
-
- // It should have a deleteItems Method
+ // it should have a deleteItems Method
  //todoItems.deleteItem(2);
