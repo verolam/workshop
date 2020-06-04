@@ -91,7 +91,7 @@ let calc4      = -2 -2; //console.log(calc4); // console calc4
 /* Modulo operator
 ------------------------------*/
 let reminder; // declare the variable undefined;
-reminder = 110 % 60; // console.log(reminder);
+reminder = 110 % 60; console.log(reminder);
 reminder = 3 % 2; // console.log(reminder);
 
 
