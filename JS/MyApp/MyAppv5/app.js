@@ -11,7 +11,7 @@ let todoItems = {
   ],
 
   displayItems : function() {
-    debugger;    
+  
     if ( this.items.length === 0 ) {
       console.log("Your Items list is empty !!!")
     } else {
@@ -30,10 +30,16 @@ let todoItems = {
   },
 
   addItem : function(todoText){
-    this.items.push({
-      todoText : todoText,
-      completed : false
-    });
+    if (todoText === ''){
+      prompt('Field is empty');
+      return;
+    } else {
+      this.items.push({
+        todoText : todoText,
+        completed : false
+      });
+    }
+   
     this.displayItems();
   },
 
@@ -80,20 +86,46 @@ let todoItems = {
    
 }
 
-// 1-  We want to get access to the Display Todos button
+// 1-  We want to get access to the DisplayItems button
 // 2 - We want to run the DisplayItem Method when someone 
 //     click on the button display
 
-let displayItemsButton = document.getElementById('displayItemsButton');
+// handlers are method which permit to make link between HTML and JS
 
-todoItems.addItem('Bread');
-todoItems.addItem('Tomatoe');
+let handlers = {
+  displayItems: function(){
+    todoItems.displayItems();
+  },
 
-displayItemsButton.addEventListener('click', function() {
-  todoItems.displayItems();
-});
+  addItem: function() {
+    let addItemdTextInput = document.getElementById('addItemTextInput');
+    todoItems.addItem(addItemTextInput.value);
+    addItemdTextInput.value = ' ';
+  },
 
-let toggleAllButton = document.getElementById('toggleAllButton');
-toggleAllButton.addEventListener('click', function () {
-  todoItems.toggleAll();
-})
+  changeItem: function() {
+    let changeItemPositionInput = document.getElementById('changeItemPositionInput');
+    let changeItemTextInput = document.getElementById('changeItemTextInput'); 
+    todoItems.changeItem(changeItemPositionInput.valueAsNumber,changeItemTextInput.value);
+    changeItemTextInput.value = '';
+    changeItemPositionInput.value = '';
+  },
+
+  deleteItem: function() {
+    let deleteItemPositionInput = document.getElementById('deleteItemPositionInput');
+    console.log(deleteItemPositionInput.valueAsNumber);
+    todoItems.deleteItem(deleteItemPositionInput.valueAsNumber);
+    deleteItemPositionInput.value = '';
+  }, 
+
+  toggleCompleted: function() {
+    let toggleCompletedPositionInput = document.getElementById('toggleCompletedPositionInput');
+    todoItems.toggleCompleted(toggleCompletedPositionInput.valueAsNumber);
+    toggleCompletedPositionInput.value = '';
+  },
+
+  toggleAll: function() {
+    todoItems.toggleAll();
+  }
+}
+

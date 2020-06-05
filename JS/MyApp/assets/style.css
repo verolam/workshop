@@ -24,13 +24,14 @@ html {
 body {
   font-family: 'Courier New', Courier, monospace;
   line-height: 1.6;
-  text-align: center;
+  
 }
 
 h1 {
   font-size: 1.5em;
   font-weight: 600;
   margin-bottom: 1.5em;
+  text-align: center;
 }
 
 hr {
@@ -44,16 +45,10 @@ button {
   cursor: pointer;
 }
 
+li {
+  list-style-type: disc;
+}
 
-/*Prism.js*/
-code[class*="language-"],
-pre[class*="language-"] {
-  font-family: 'Courier New', monospace;
-  font-size: 1.2em;
-}
-.token.number {
-	color: #f50;
-}
 /*#endregion*/
 
 
